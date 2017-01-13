@@ -103,10 +103,10 @@ jspm_packages
 .idea_modules/
 
 # JIRA plugin
-atlassian-ide-plugin.xml
+atlassian-ide-plugin.
 
 # Crashlytics plugin (for Android Studio and IntelliJ)
-com_crashlytics_export_strings.xml
+com_crashlytics_export_strings.xmlxml
 crashlytics.properties
 crashlytics-build.properties
 fabric.properties
