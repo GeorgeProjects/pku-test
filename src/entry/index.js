@@ -6,7 +6,7 @@ import config from '../commons/config'
 // 原型链安装
 Vue.prototype.CommonsConfig = config
 
-let run = function () {
+let run = () => {
   return new Vue({
     el: 'body',
     replace: false,

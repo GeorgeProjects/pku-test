@@ -1,31 +1,25 @@
-@import '../commons/vars';
-@import '../commons/mixins';
+@import "../commons/vars";
+@import "../commons/mixins";
 
 html,
-body{
-  .body-style(0, blue, red);/*rgba(255, 255, 255, 0.8));*/
-}
-
-/*
 body {
   margin: 0;
   padding: 0;
-  background-color: @bg-color;
-  color: rgba(255, 255, 255, 0.8);
+  color: @color-light;
 }
-*/
-image{
-  .image-icon(30);
-}
-
 
 #App {
   margin: 0 auto;
   padding: 100px 200px;
+  background-color: @bg-color-dark;
   .hl-span {
-    color: #00bcd4;
+    color: #fff;
   }
   .hl-span-error {
     color: #e91e63;
+  }
+  .image {
+    .image-icon(2);
+    background: green;
   }
 }
