@@ -5,6 +5,7 @@ import style from './style.less'
 import template from './template.html'
 import {updateTestData} from '../vuex/actions'
 import {testData, testDataUpdateStatus} from '../vuex/getters'
+import ChangLogs from '../components/ChangLogs'
 
 export default{
   template,
@@ -20,8 +21,14 @@ export default{
     return {
       style,
       message: 'Hello World :)',
+      playing: false,
+      handler: null,
       isSuccess: false,
-      isFailed: false
+      isFailed: false,
+      recordsForChangLogs: [{
+        title: 'Day 1',
+        content: 'Hello World Demo Done!'
+      }]
     }
   },
   computed: {
@@ -48,5 +55,22 @@ export default{
         this.isFailed = this.VuexUtils.isStatusEqual(now, this.VuexMutations.TEST_DATA_UPDATE_FAILED)
       }
     }
+  },
+  methods: {
+    dynamicMessage () {
+      clearInterval(this.handler)
+      this.playing = !this.playing
+      if (this.playing) {
+        this.handler = setInterval(() => {
+          this.message = 'Hi, pku. :) ' + Math.random()
+        }, 100)
+      }
+    }
+  },
+  ready () {
+    console.info('App Ready!')
+  },
+  components: {
+    ChangLogs
   }
 }

@@ -1,25 +1,25 @@
-@import "../commons/vars.less";
-@import "../commons/mixins.less";
+@import "../commons/vars";
+@import "../commons/mixins";
 
 html,
 body {
   margin: 0;
   padding: 0;
-  background-color: @bg-color-dark;
-  color: @image-icon-height;
+  color: @color-light;
 }
 
 #App {
   margin: 0 auto;
   padding: 100px 200px;
+  background-color: @bg-color-dark;
   .hl-span {
-    color: #00bcd4;
+    color: #fff;
   }
   .hl-span-error {
     color: #e91e63;
   }
-  .image{
-    image-icon(1);
-    background:green;
+  .image {
+    .image-icon(2);
+    background: green;
   }
 }

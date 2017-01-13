@@ -75,14 +75,13 @@
   },
   "name": "pku-test",
   "version": "1.0.0",
-  "description": "no",
+  "description": "some desc",
   "keywords": [
     "pku",
-    "js",
-    "node"
+    "skyeye"
   ],
-  "author": "pku@pku.edu.cn",
+  "author": "pku@pku.cn",
   "_addons": {
-    "group": "360 SkyEye FrontEnd"
+    "group": "PKU_SKYEYE"
   }
 }
