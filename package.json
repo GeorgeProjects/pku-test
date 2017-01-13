@@ -75,12 +75,13 @@
   },
   "name": "pku-test",
   "version": "1.0.0",
-  "description": "",
+  "description": "some desc",
   "keywords": [
-    ""
+    "pku",
+    "skyeye"
   ],
-  "author": "",
+  "author": "pku@pku.cn",
   "_addons": {
-    "group": "360 SkyEye FrontEnd"
+    "group": "PKU_SKYEYE"
   }
 }

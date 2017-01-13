@@ -57,9 +57,9 @@ var config = {
   },
   // pro编译输出文件相关路径配置, 请填写绝对路径
   buildDist: {
-      public: '/static/pku_dist', // script src 或 link href 链接静态文件时路径前缀
-      bundle: path.resolve(__dirname, './_backend/static/pku_dist'), // entry产生的文件
-      template: path.resolve(__dirname, './_backend/static/templates') // html模板
+    public: '/static/pku_dist', // script src 或 link href 链接静态文件时路径前缀
+    bundle: path.resolve(__dirname, './_backend/static/pku_dist'), // entry产生的文件
+    template: path.resolve(__dirname, './_backend/static/templates') // html模板
   },
   devServer: localConfig.devServer
 }
