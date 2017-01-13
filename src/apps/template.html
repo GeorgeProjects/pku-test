@@ -1,0 +1,23 @@
+<div :id="style.App">
+    <button @click="dynamicMessage">
+        {{ playing ? 'Pause' : 'Start' }}
+    </button>
+    <h1>{{ message }}</h1>
+    <label>Input Your Name</label>
+    <input type="text" v-model="privateTestData">
+    <p>
+        Your name is
+        <span class="{{style['hl-span']}}">
+            {{ testData }}
+        </span>
+    </p>
+    <p v-show="testDataUpdateStatus">
+        Your name is updated, vuex status
+        <span :class="className">
+            {{ testDataUpdateStatus }}
+        </span>
+    </p>
+    <h3>Now enjoy coding !</h3>
+    <div class="{{ style.image }}"></div>
+    <chang-logs :records.sync="recordsForChangLogs"></chang-logs>
+</div>
