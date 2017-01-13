@@ -1,8 +1,8 @@
 /**
  * Created by yangtaofeng on 2017/1/13.
  */
-function Test(name) {
-  this.name = name
+function Test(name1) {
+  this.name = name1
   return this
 }
 
